@@ -1,0 +1,27 @@
+.Badge_form{
+    border: 10px solid darkgoldenrod;
+    width: 70%;
+    margin: 40px auto;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.form-group label{
+    font-size: 26px;
+    margin: 5px auto;
+}
+
+.form-group input{
+    height: 30px;
+    margin: 0 auto ;
+    width: 80%;
+    font-size: 24px;
+}

@@ -1,0 +1,26 @@
+.BadgeNew__hero {
+    width: 100%;
+    padding: 2rem 0;
+    /* background: url('../../../images/stars.svg'), #1B1B25; */
+    background-repeat: repeat;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+  }
+
+  .BadgeNew__hero-image{
+    max-height: 100px;
+  }
+
+.container-BadgeForm{
+  margin: 0 auto;
+  width: 80%;
+  border: 10px solid rebeccapurple;
+}
+
+.container-BadgeForm h1{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 40px;
+}

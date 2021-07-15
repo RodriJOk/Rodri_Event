@@ -1,0 +1,54 @@
+/* .BadgesList{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:center;
+    border: 3px solid grey;
+    gap: 3rem;
+    border-radius: 15px;
+    margin: 10px 0;
+    border: 10px solid red;
+} */
+
+.List__container--image{
+    width: auto;
+    padding: 0px 30px;
+}
+
+.List__container--image img{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+.BadgesListItem{
+    border: 6px solid grey;
+    border-radius: 15px;
+    margin: 15px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 150px;
+}
+
+.BadgesListItem__avatar{
+    border-radius: 50%;
+    height: 100px;
+    margin: 20px
+}
+
+.BadgesListItem__info{
+    width: 80%;
+}
+
+.BadgesListItem__info-name{
+    font-size: 30px;
+    margin: 10px 0px;
+}
+
+.BadgesListItem__info p:nth-child(2), 
+.BadgesListItem__info p:nth-child(3){
+    font-size: 20px;
+    margin: 10px 0px;
+}
