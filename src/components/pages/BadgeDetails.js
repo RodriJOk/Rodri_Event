@@ -38,20 +38,18 @@ const BadgeDetails = (props) => {
                                 jobTitle={badge.jobTitle}
                             />
                         </div>
-                        <div className="col">
+                        <div className="rodri-contenedor">
                             <h2>Actions</h2>
-                            <div>
-                                <button onClick={()=> setContador(contador +1)} className="btn btn-primary"> 
-                                    Incrementar Numero
-                                </button>
-                                <p>{contador}</p>
-                                <button onClick={()=> setContador(contador -1)} className="btn btn-primary"> 
-                                    Decrementar Numero
-                                </button>
-                                <div>
-                                    <Link className="btn btn-primary " to={`/badges/${badge.id}/edit`}>Edit</Link>
+                            <div className="BadgeDetails__buttons">
+                                <div className="BadgeDetails__buttons-first">
+                                    <Link 
+                                        className="btn btn-primary" 
+                                        to={`/badges/${badge.id}/edit`}
+                                        >
+                                            Edit
+                                    </Link>
                                 </div>
-                                <div>
+                                <div className="BadgeDetails__buttons-second">
                                     <button 
                                         className="btn btn-danger"
                                         onClick={props.onOpenModal}

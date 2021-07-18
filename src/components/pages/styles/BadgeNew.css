@@ -14,13 +14,18 @@
   }
 
 .container-BadgeForm{
+  border-radius: 15px;
   margin: 0 auto;
-  width: 80%;
-  border: 10px solid rebeccapurple;
+  width: 60%;
+  background: #1B1B25;
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.10);
 }
 
 .container-BadgeForm h1{
   text-align: center;
   text-decoration: underline;
   font-size: 40px;
+  color: #ffffff;
+  padding-top: 25px;
+  min-height: 50px;
 }

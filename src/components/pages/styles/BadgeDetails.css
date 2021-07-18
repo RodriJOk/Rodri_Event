@@ -15,6 +15,30 @@
   
   .BadgeDetails__buttons {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: row;
     margin-bottom: 1rem;
+  }
+  
+  .rodri-contenedor{
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .rodri-contenedor h2{
+    font-size: 34px;
+    margin: 25px 0px;
+  }
+
+  .BadgeDetails__buttons-second{
+    margin-top: -18px;
+  }
+
+  .btn-primary{
+    font-family: Arial, Helvetica, sans-serif ;
   }

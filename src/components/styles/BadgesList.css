@@ -1,13 +1,5 @@
-/* .BadgesList{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items:center;
-    border: 3px solid grey;
-    gap: 3rem;
-    border-radius: 15px;
-    margin: 10px 0;
-    border: 10px solid red;
+/* .BadgeList{
+    
 } */
 
 .List__container--image{
@@ -50,5 +42,23 @@
 .BadgesListItem__info p:nth-child(2), 
 .BadgesListItem__info p:nth-child(3){
     font-size: 20px;
+    margin: 10px 0px;
+}
+
+.BadgeList__search{
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.BadgeList__search-title{
+    font-size: 32px;
+    margin: 10px 0px;
+}
+
+.BadgeList__search-input{
+    border-radius: 15px;
+    height: 35px;
     margin: 10px 0px;
 }

@@ -94,7 +94,7 @@ class BadgeEdit extends React.Component {
                                 evento={this.state.form.evento || 'Platzi Conf'}
                                 />
                         </div>
-                        <div className="col-6">
+                        <div className="BadgeEdit__form">
                             <h1>Edit Attendant</h1>
                             <BadgeForm 
                                 onChange={this.handleChange} 

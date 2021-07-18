@@ -8,36 +8,14 @@ class BadgeForm extends React.Component {
         email:"",
         jobTitle: "",
         twitter: "",
-        /* evento: "" */
     };
-     
-    /* handleChange = e =>{ */
-        /* console.log({
-            name: e.target.name,
-            value: e.target.value
-        }) */
-        /* this.setState({
-            [e.target.name]: e.target.value,
-        })
-    } */
-
-    handleClick = e =>{
-        /* e.preventDefault(); */
-        console.log("Boton fue clickeado")
-    }
-
-    /* handleSubmit = e =>{
-        e.preventDefault(); 
-        console.log("Formulario enviado")
-        console.log(this.state)
-    } */
 
     render() { 
         return ( 
         <div>
             <form onSubmit={this.props.onSubmit} className="Badge_form">
                 <div className="form-group">
-                    <label>Nombre</label>
+                    <label>Nombre:</label>
                     <input 
                         onChange={this.props.onChange}
                         className="form-control" 
@@ -47,7 +25,7 @@ class BadgeForm extends React.Component {
                 </div>
 
                 <div className="form-group">
-                    <label>Apellido</label>
+                    <label>Apellido:</label>
                     <input 
                         onChange={this.props.onChange} 
                         className="form-control" 
@@ -57,7 +35,7 @@ class BadgeForm extends React.Component {
                 </div>
                 
                 <div className="form-group">
-                    <label>Email</label>
+                    <label>Email:</label>
                     <input 
                         onChange={this.props.onChange} 
                         className="form-control" 
@@ -67,7 +45,7 @@ class BadgeForm extends React.Component {
                 </div>
 
                 <div className="form-group">
-                    <label>Profesion</label>
+                    <label>Profesion:</label>
                     <input 
                         onChange={this.props.onChange} 
                         className="form-control" 
@@ -76,9 +54,8 @@ class BadgeForm extends React.Component {
                         value={this.props.formValues.jobTitle}/>
                 </div>
 
-
                 <div className="form-group">
-                    <label>Twitter</label>
+                    <label>Twitter:</label>
                     <input 
                         onChange={this.props.onChange} 
                         className="form-control" 
@@ -86,18 +63,10 @@ class BadgeForm extends React.Component {
                         name="twitter"
                         value={this.props.formValues.twitter}/>
                 </div>
-                
-                {/* <div className="form-group">
-                    <label>Evento</label>
-                    <input 
-                        onChange={this.props.onChange} 
-                        className="form-control" 
-                        type="text" 
-                        name="evento"
-                        value={this.props.formValues.evento}/>
-                </div> */}
 
-                <button onClick={this.handleClick} type="submit" className="btn btn-primary">Save</button>
+                <div className="form-group">
+                    <button onClick={this.handleClick} type="submit" className="btn btn-primary">Registrarme</button>
+                </div>
             </form>
             {this.props.error && (
                 <p className="text-danger">{this.props.error.message}</p>

@@ -210,11 +210,11 @@ function BadgesList(props) {
 
   return (
     <div className="BadgesList">
-      <div className="form-group">
-        <label>Filter Badges</label>
+      <div className="BadgeList__search">
+        <label className="BadgeList__search-title">Buscar asistente</label>
         <input
           type="text"
-          className="form-control"
+          className="BadgeList__search-input"
           value={query}
           onChange={e => {
             setQuery(e.target.value);
@@ -222,7 +222,7 @@ function BadgesList(props) {
         />
       </div>
 
-      <ul className="list-unstyled">
+      <ul style={{textDecoration: "none", listStyle: "none"}}>
         {filteredBadges.map(badge => {
           return (
             <li key={badge.id}>
